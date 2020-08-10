@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #283333;
+}
+
+canvas {
+    display: block;
+    background: #283333;
+}
+
+.caja {
+    height: 50px;
+    position: relative;
+    background-color: #3a4b4b;
+}
+
+.grupo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo__item {
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    float: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo__item:hover, .grupo__item--activo {
+    background-color: #4b6161;
+}
+
+.grupo__img {
+    width: 100%;
+    filter: invert();
+}
+
+.grupo__linea {
+    position: relative;
+    background-color: white;
+}
+
+.grupo__pintura {
+    width: 60%;
+    height: 60%;
+    border-radius: 2px;
+    border: 1.5px solid white;
+}

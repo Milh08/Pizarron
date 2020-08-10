@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizarron Virtual</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <canvas id="drawing"></canvas>
+
+    <footer class="caja">
+
+        <div class="grupo">
+            
+            <div class="grupo__comandos">
+                <div class="grupo__item">
+                    <img src="img/reloj.svg" class="grupo__img" />
+                </div>
+
+                <div class="grupo__item">
+                    <img src="img/descargar.svg" class="grupo__img">
+                </div>
+            </div>
+
+            <div class="grupo__figuras">
+                <div class="grupo__item">
+                    <img src="img/zona.svg" class="grupo__img"/>
+                </div>
+            </div>
+
+            <div class="grupo__herramientas">
+                <div class="grupo__item grupo__item--activo">
+                    <img src="img/lapiz.svg" class="grupo__img" />
+                </div>
+                <div class="grupo__item">
+                    <img src="img/limpiar.svg" class="grupo__img" />
+                </div>
+            </div>
+
+            <div class="grupo__lineas">
+                <div class="grupo__item grupo__item--activo" data-commad="3" title="3 pixeles">
+                    <img src="img/punto.svg" style="width: 3px; height: 3px;" class="grupo__img" />
+                </div>
+                <div class="grupo__item" data-line-width="4" title="4 pixeles">
+                    <img src="img/punto.svg" style="width: 4px; height: 4px;" class="grupo__img" />
+                </div>
+                <div class="grupo__item" data-line-width="5" title="5 pixeles">
+                    <img src="img/punto.svg" style="width: 5px; height: 5px;" class="grupo__img" />
+                </div>
+            </div>
+
+            <div class="grupo__pinturas">
+                <div class="grupo__item grupo__item--activo" data-color="#ffffff" title="Blanco">
+                    <div class="grupo__pintura" style="background-color: #ffffff;"></div>
+                </div>
+                <div class="grupo__item" data-color="#000000" title="Negro">
+                    <div class="grupo__pintura" style="background-color: #000000;"></div>
+                </div>
+                <div class="grupo__item" data-color="#ff0000" title="Rojo">
+                    <div class="grupo__pintura" style="background-color: #ff0000;"></div>
+                </div>
+                <div class="grupo__item" data-color="#00ffff" title="Cyan">
+                    <div class="grupo__pintura" style="background-color: #00ffff;"></div>
+                </div>
+                <div class="grupo__item" data-color="#0000ff" title="Azul">
+                    <div class="grupo__pintura" style="background-color: #0000ff;"></div>
+                </div>
+                <div class="grupo__item" data-color="#ffff00" title="Amarillo">
+                    <div class="grupo__pintura" style="background-color: #ffff00;"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
